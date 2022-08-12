@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.benjen.mollerarch.mapper.TestCaseMapper">
+
+    <!--    public Account addCase(Long id); -->
+    <insert id="addCase" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
+        insert into api_testdata_demo(`Protocol`,`Category`, `Method`,`Parameters`,`expected`,`description`,`isRun`) values(#{Protocol},#{Category},#{Method},#{Parameters},#{expected},#{description},#{isRun})
+    </insert>
+    <!--    -->
+
+    <select id="selectBysql" parameterType="String"  resultType="java.util.LinkedHashMap">
+        ${value};
+    </select>
+    <!--        SELECT * FROM autotest.api_testdata_demo;-->
+</mapper>

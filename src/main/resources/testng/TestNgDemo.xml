@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="jdbc 测试" verbose="10" preserve-order="true" >
+
+    <test name="TestDemo01" preserve-order="true">
+        <parameter name="sql"
+                   value="SELECT * FROM autotest.api_testdata_demo;"/>
+        <classes>
+            <class name="com.benjen.mollerarch.MollerarchApplicationTests"/>
+        </classes>
+    </test>
+
+    <test name="TestDemo02" preserve-order="true">
+        <parameter name="sql"
+                   value="SELECT * FROM autotest.api_testdata_demo;"/>
+        <classes>
+            <class name="com.benjen.mollerarch.MollerarchApplicationTests"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>
