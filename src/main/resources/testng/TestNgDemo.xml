@@ -6,7 +6,7 @@
         <parameter name="sql"
                    value="SELECT * FROM autotest.api_testdata_demo;"/>
         <classes>
-            <class name="com.benjen.mollerarch.MollerarchApplicationTests"/>
+            <class name="com.benjen.mollerarch.testng.MollerarchApplicationTests"/>
         </classes>
     </test>
 
@@ -14,7 +14,7 @@
         <parameter name="sql"
                    value="SELECT * FROM autotest.api_testdata_demo;"/>
         <classes>
-            <class name="com.benjen.mollerarch.MollerarchApplicationTests"/>
+            <class name="com.benjen.mollerarch.testng.MollerarchApplicationTests"/>
         </classes>
     </test>
 

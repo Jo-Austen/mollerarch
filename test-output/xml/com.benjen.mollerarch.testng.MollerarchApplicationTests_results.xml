@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDemo01"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.082">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testSelect"
+                time="0.082"
+                classname="com.benjen.mollerarch.testng.MollerarchApplicationTests">
+            </testcase>
+</testsuite>

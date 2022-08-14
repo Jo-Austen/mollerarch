@@ -1,4 +1,5 @@
-package com.benjen.mollerarch;
+package com.benjen.mollerarch.testng;
+
 
 import com.alibaba.fastjson.JSONObject;
 import com.benjen.mollerarch.service.TestCaseService;
@@ -21,10 +22,12 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 @SpringBootTest
 @Slf4j
@@ -127,12 +130,12 @@ class MollerarchApplicationTests extends AbstractTestNGSpringContextTests {
 		log.info(parameters);
 		//获取参数之后,获取动态参数值${values}
 		//后续重新创建新的TestCase Table
-		String HttpMethod = data.get("Method");
-		String url = FastJsonUtils.fromString(matchParams(data.get("Parameters")),"url");
-		String resBody = getHttpResponse(url);
-		log.info(resBody);
-		JSONObject jsonObject = JSONObject.parseObject(resBody);
-		System.out.println(jsonObject);
+//		String HttpMethod = data.get("Method");
+//		String url = FastJsonUtils.fromString(matchParams(data.get("Parameters")),"url");
+//		String resBody = getHttpResponse(url);
+//		log.info(resBody);
+//		JSONObject jsonObject = JSONObject.parseObject(resBody);
+//		System.out.println(jsonObject);
 		// 参数值匹配并替换
 //        String httpClientExampleRes = getHttpResponse("http://orchestrator-antd-zpytest.test.mycyclone.com/api/v1/users?page=0&size=10&sort=createdDate%2Cdesc&query=");
 //        JSONObject jsonObject = JSONObject.parseObject(httpClientExampleRes);
