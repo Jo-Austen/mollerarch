@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDemo02"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.002">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testSelect_2"
+                time="0.001"
+                classname="com.benjen.zgous.testng.ZgousApplicationTests (testSelect_3)">
+            </testcase>
+            <testcase
+                name="testSelect_3"
+                time="0.001"
+                classname="com.benjen.zgous.testng.ZgousApplicationTests (testSelect_3)">
+            </testcase>
+</testsuite>
