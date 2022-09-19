@@ -1,13 +1,10 @@
 package com.benjen.zgous.testng;
 
-
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.benjen.zgous.utils.DataProvider_forDB;
 import com.benjen.zgous.utils.FastJsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.platform.commons.util.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
@@ -36,7 +33,7 @@ class ZgousApplicationTests extends AbstractTestNGSpringContextTests implements 
 
 	private static final HttpClient client = HttpClient.newHttpClient();
 
-	private ThreadLocal<String> testName = new ThreadLocal<>();
+	private final ThreadLocal<String> testName = new ThreadLocal<>();
 
 	public static String getHttpResponse(String url) {
 		HttpRequest request = HttpRequest.newBuilder()
